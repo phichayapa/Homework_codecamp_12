@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+</head>
+<body style="padding-left: 2%; padding-top: 2%;">
+    <form action="https://jkorpela.fi/cgi-bin/echo.cgi" style="background-color: white;">
+        <div style="display: inline-block;">
+        <label for="fly">Flying form</label> <br>
+        <select name="fly" id="fly" style="text-align: center;">
+            <option value="Bangkok - Don Mueang">Bangkok - Don Mueang</option>
+            <option value="Chiang Mai">Chiang Mai</option>
+            <option value="Chiang Rai">Chiang Rai</option>
+            <option value="Udon Thani">Udon Thani</option>
+            <option value="Khon Kaen">Khon Kaen</option>
+            <option value="Phuket">Phuket</option>
+            <option value="Hatyai">Hatyai</option>
+            <option value="Narathiwat">Narathiwat</option>
+        </select>
+        </div>
+        <div style="display: inline-block; margin-left: 1.5%;">
+            <label for="to">To</label> <br>
+            <select name="to" id="to" style="width: 180%; text-align: center;">
+            <option value="Chiang Mai">Chiang Mai</option>
+            <option value="Chiang Rai">Chiang Rai</option>
+            <option value="Udon Thani">Udon Thani</option>
+            <option value="Khon Kaen">Khon Kaen</option>
+            <option value="Phuket">Phuket</option>
+            <option value="Hatyai">Hatyai</option>
+            <option value="Narathiwat">Narathiwat</option>
+        </select>
+        </div>
+        <br>
+        <div style="display: inline-block; margin-top: 1%;"> 
+            <label for="depart">Departing</label> <br>
+                <input type="date" name="bday" style="width: 114%;">
+            </select>
+        </div>
+        <div style="display: inline-block; margin-left: 2.9%;">
+            <label for="return">Returning</label> <br>
+                <input type="date" name="return" style="width: 114%;">
+            </select>
+        </div>
+        <br>
+
+        <div style="display: inline-block; margin-top: 1%; margin-right: 0.5%;">
+            <label for="adult">Adult</label> <br>
+            <input type="number" name="adult" min="0" max="5" value="1">
+        </div>
+        <div style="display: inline-block;  margin-right: 0.5%;">
+            <label for="child">Child</label> <br>
+            <input type="number" name="child" min="0" max="5" value="0">
+        </div>
+        <div style="display: inline-block;  margin-right: 0.5%;">
+            <label for="infant">Infant</label> <br>
+            <input type="number" name="infant" min="0" max="5" value="0">
+        </div>
+        <div style="display: inline-block;">
+            <label for="currency" style="color: red;"><b>Currency</b></label> <br>
+            <select name="currency" style="width: 115%; text-align: center;">
+                <option value="usd">USD</option>
+                <option value="euro">EUR</option>
+                <option value="japan">JPY</option>
+                <option value="china">CNY</option>
+                <option value="korea">KRW</option>
+                <option value="thb">THB</option>
+            </select>
+        </div>
+        <br>
+        <div style="margin-top: 1%;">
+            <input type="submit" value="SEARCH" style="background-color: darkorange; color: white; border: none; height: 30px; border-radius: 5px; margin-left: 2%;">
+        </div>
+    </form>
+</body>
+</html>

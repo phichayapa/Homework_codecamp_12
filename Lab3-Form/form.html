@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework_form</title>
+    
+</head>
+<body>
+    <table style="border: 1px solid;">
+        <tr>
+            <td colspan="2" style="border: 1px solid;"><strong><center>Pizza Shop2.0</center></strong></td>
+        </tr>
+
+        <tr>
+          <td style="border: 1px solid;">Name</td>
+          
+            <form action="https://jkorpela.fi/cgi-bin/echo.cgi">
+                <td style="border: inset;"> <input type="text" name="name"> </td>
+        </tr>
+        <tr>
+          <td style="border: 1px solid;">Pizza Topping</td>
+          <td style="border: 1px solid;">
+              <input type="radio" name="pizza">
+              <label for="pizza" value="supreme">Supreme</label> <br>
+              <input type="radio" name="pizza">
+              <label for="pizza" value="vegetarian">Vegetarian</label> <br>
+              <input type="radio" name="pizza">
+              <label for="pizza" value="hawaiian">Hawaiian</label>
+          </td>
+        </tr>
+
+        <tr> 
+            <td style="border: 1px solid;">Pizza Sauce</td>
+            <td style="border: 1px solid;">
+                <select name="sauce">
+                    <option value="tomato">Tomato</option>
+                    <option value="barbeque">Barbeque</option>
+                    <option value="mayonnaise">Mayonnaise</option>
+                    <option value="secret">Secret Sauce</option>
+                    <option selected="selected" value="secret">Secret Sauce</option>
+                  </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td style="border: 1px solid;">Optional Extras</td>
+            <td style="border: 1px solid;">
+                <input type="checkbox" name="extra_cheese" value="1">Extra Cheese</input>
+                <input type="checkbox" name="gluten_free" value="1">Gluten Free Base</input>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2">Delivery Instructions: <br>
+                <textarea name="delivery" cols="50" rows="4"></textarea>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2" style="border: 1px solid;">
+                <input type="submit" value="Send my Order">
+            </td>
+
+        </tr>
+    </form>
+
+      </table>
+
+</body>
+</html>
